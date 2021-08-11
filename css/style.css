@@ -713,12 +713,13 @@ p{
 .footer-v1 .top-footer {
   background: #ffffff;
   padding: 50px 0 40px 0;
+  font-family: 'Quicksand';
 }
 .footer-content {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-column-gap: 5rem;
-  margin-right: 15px
+  grid-template-columns: repeat(auto-fill,300px);
+  grid-gap: 3rem;
+  margin-right: 15px;
 }
 .list-inline {
   display:grid;
