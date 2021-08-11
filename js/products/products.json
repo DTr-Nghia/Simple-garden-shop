@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Ivy",
+        "price": 10.99,
+        "image":  "./css/image/Ivy.jpg" 
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Laurel",
+        "price": 12.99,
+        "image": "./css/image/Laurel.jpg"
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Dumb-cane",
+        "price": 12.99,
+        "image": "./css/image/Dumb-cane.jpg" 
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Orchid",
+        "price": 22.99,
+        "image":  "./css/image/Orchid.jpg" 
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Pothos",
+        "price": 88.99,
+        "image":"./css/image/Pothos.jpg"
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Dracaena fragrans",
+        "price": 32.99,
+        "image": "./css/image/Dracaena.jpg"
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Sansevieria trifasciata",
+        "price": 45.99,
+        "image":"./css/image/Sansevieria.jpg"
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "succulent",
+        "price": 33.99,
+        "image":  "./css/image/succulent.jpg" 
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <script src="https://kit.fontawesome.com/9f8aa8ebe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="index.html" >
+                <img src="//cdn.shopify.com/s/files/1/0519/7024/4801/files/Logo2_df8933e2-754b-41ad-abb1-b5d17ce375c6.png?v=1607483091" alt="logo-img" width="155">
+            </a>
+        </div>
+        <div class="nav-center">
+            <div class="search-btn">
+                <span class="search-icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <div class="login-btn">
+                <span class="login-icon">
+                    <i class="fas fa-user-alt"></i>
+                </span>
+            </div>
+            <div class="cart-btn">
+                <span class="cart-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+            <span class="hamburger">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </nav>
+    <div class="login-form">
+        <div class="overlay">
+            <div class="login-primary" >
+                <div class="login-logo">
+                    <a href="index.html" >
+                        <img src="//cdn.shopify.com/s/files/1/0519/7024/4801/files/Logo2_df8933e2-754b-41ad-abb1-b5d17ce375c6.png?v=1607483091" alt="logo-img" width="155">
+                    </a>
+                </div>
+                <h2 class="title-login">
+                    Great to have you back!
+                </h2>
+                <div class="mail-login">
+                    <form action="./js/login/index.js"  method="post" id="customer_login" accept-charset="UTF-8"></form>
+                    <input type="hidden" name="form-type" value="customer_login">
+                    <input type="hidden" name="utf-8" value="">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password_email" placeholder="Your Password" required>
+                    </div>
+                    <div class="form-check">
+                        <a href="#recover" class="recover-password">Forgot your password?</a>
+                    </div>
+                    <button type="submit" class="log-in-btn" value="login">Log In</button>
+                </div>
+                <div class="register-acc">
+                    <div class="register-box">
+                        <span class="register-cont">Don't have an account?</span>
+                        <a href="#" class="jsCreatea_account">Register now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recover-form">
+                <form action="/account/recover" method="post" accept-charset="UTF-8">
+                    <input type="hidden" name="form-type" value="recover_customer_password">
+                    <input type="hidden" name="utf-8" value="">
+                    <div class="recover_password_form" >
+                        <div class="block-login">
+                            <h2 class="title-login">Reset your password</h2>
+                        </div>
+                        <div class="form-group">
+                            <div class="recover">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <button type="submit" class="log-in-btn" value="login">Submit</button>
+                            <div class="register-acc">
+                                <div class="register-box">
+                                    <a href="#" class="hideRecoverPassword">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="register-account">         
+                    <h2 class="title-login">
+                        Register
+                    </h2>
+                    <div class="mail-login">
+                        <form action="./js/login/index.js"  method="post" id="customer_register" accept-charset="UTF-8"></form>
+                        <input type="hidden" name="form-type" value="customer_register">
+                        <input type="hidden" name="utf-8" value="">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password_email" placeholder="Your Password" required>
+                        </div>
+                        <button type="submit" class="log-in-btn" value="login">Log In</button>
+                        <div class="register-acc">
+                            <div class="register-box">
+                                <a href="#" class="back-to-login">Back To Login</a>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+    <!-- search -->
+    <div class="search-full-desktop">
+        <div class="search-container">
+            <div class="search-header">
+                <h2 class="search-title">Start typing and hit Enter</h2>
+            </div>
+            <form action="/search" class="search-form">
+                <input type="hidden" name="type" value="product">
+                <input type="text" name="q" placeholder="Search anything" class="search-input">
+                <button type="submit" class="search-confirm">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <div class="close-search">
+                <button class="close-search-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-result">
+                <div class="js-search-result">
+
+                </div>
+            </div>
+        </div>
+        <div class="bg_search_box"></div>
+    </div>
+    <!-- sidebar -->
+    <div class="background-tab-menu "></div>
+    <div class="tab-menu">
+        <div class="position-relative">
+            <ul class="menu">
+                <a href="#" class="header-menu">Menu</a>
+                <li class="link1">
+                    <a href="#">Home
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="link1">
+                    <a href="#">Shop
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="link1">
+                    <a href="#">Featured
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="link1">
+                    <a href="#">Pages
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="link1">
+                    <a href="#">Blogs
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- hero -->
+    <header class= "hero">
+        <div class="banner">
+            <h1 class="banner-title">Garden from our heart</h1>
+            <h2 class="banner-slogan">We will give you full of love from this planet</h2>
+            <button class="banner-btn">Shop now</button>
+        </div>
+    </header>
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="cart-close">
+                <i class="fas fa-times"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!-- cart items -->
+                <!-- <div class="cart-item">
+                
+                </div> -->
+                <!-- end of cart item -->
+            </div>
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart ">clear cart</button>
+            </div>
+        </div>
+    </div>
+  <!-- end of cart -->
+    <!-- service slide -->
+    <div class="container container-v1 mt-all">
+        <div class="slick-initialized slick-slider">
+            <div class="slick-list draggable">
+                <div class="slick-track autoplay">
+                    <div class="slide-1 slick-slide padding-slick">
+                        <div class="box-service">
+                            <div class="service-img">
+                                <img src="//cdn.shopify.com/s/files/1/0519/7024/4801/files/sv2_baf792ed-b890-4a95-a5c5-9fbaa2a01a63.png?v=1609123194" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">SAFE PAYMENT</h4>
+                                <p class="content">Pay with the world's most popular and secure payment methods</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-2 slick-slide padding-slick">
+                        <div class="box-service">
+                            <div class="service-img">
+                                <img src="//cdn.shopify.com/s/files/1/0519/7024/4801/files/sv1_ce45f113-f5b4-43da-b776-059fd1057549.png?v=1609123180" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">SHIPPING & RETURN</h4>
+                                <p class="content">If your glasses aren't perfect, return them within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-3 slick-slide padding-slick">
+                        <div class="box-service">
+                            <div class="service-img">
+                                <img src="//cdn.shopify.com/s/files/1/0519/7024/4801/files/sv3_0d70ca3b-83e0-432c-9fa6-388ea00f408a.png?v=1609123207" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">SHOP WITH CONFIDENCE</h4>
+                                <p class="content">Our Buyer Protection covers your purchase from click to delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products -->
+  <section class="products">
+    <div class="section-title">
+      <h2>our products</h2>
+    </div>
+    <div class="products-center">
+      <!-- single product -->
+      <!-- <article class="product">
+        <div class="img-container">
+          <img src="./css/image/Ivy.jpg" alt="product" class="product-img">
+          <button class="bag-btn" data-id="1">
+            <i class="fas fa-shopping-cart"></i>add to cart
+          </button>
+        </div>
+        <h3>Ivy</h3>
+        <h4>$156</h4>
+      </article> -->
+      <!-- end of single product -->
+    </div>
+  </section>
+  <div class="end_content">
+      <footer class="footer-v1">
+          <div class="top-footer">
+              <div class="container container-v1">
+                   <div class="footer-content">
+                        <div class="footer-col-1">
+                            <div class="info_footer">
+                                <div class="logo-top">
+                                        <a href="index.html" >
+                                            <img src="//cdn.shopify.com/s/files/1/0519/7024/4801/files/Logo2_df8933e2-754b-41ad-abb1-b5d17ce375c6.png?v=1607483091" alt="logo-img" width="155">
+                                        </a>
+                                </div>
+                                <p class="footer-quote">
+                                    Sophisticated simplicity for the<br> independent mind.
+                                </p>
+                                <div class="list-icon">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <div class="info_footer">
+                                <h4 class="title-footer">
+                                    Help & Information
+                                </h4>
+                                <ul class="info-list">
+                                    <li><a href="#" title="About us">About us</a></li>
+                                    <li><a href="#" title="Privacy policy">Privacy policy</a></li>
+                                    <li><a href="#" title="Terms and condition">Terms and conditions</a></li>
+                                    <li><a href="#" title="Product returns">Product returns</a></li>
+                                    <li><a href="#" title="Wholesale Policy">Wholesale policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <div class="info_footer">
+                                <h4 class="title-footer">
+                                    About us
+                                </h4>
+                                <ul class="info-list">
+                                    <li><a href="#" title="Pagination">About us</a></li>
+                                    <li><a href="#" title="Contact">Contact</a></li>
+                                    <li><a href="#" title="Terms and condition">Terms and conditions</a></li>
+                                    <li><a href="#" title="Accessories">Accessories</a></li>
+                                    <li><a href="#" title="Term of use">Term of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <div class="info_footer">
+                                <h4 class="title-footer">
+                                    Categories
+                                </h4>
+                                <ul class="info-list">
+                                    <li><a href="#" title="Help center">Help center</a></li>
+                                    <li><a href="#" title="Address store">Address store</a></li>
+                                    <li><a href="#" title="Privacy policy">Privacy policy</a></li>
+                                    <li><a href="#" title="Receiver & Amplifiers">Receiver & Amplifiers</a></li>
+                                    <li><a href="#" title="Clothing">Clothing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="copyright">
+                       <p>© Copyright 2020 | GreenlyStore</p>
+                   </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+  <!-- end of products -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/hidebar.js"></script>
+    <script src="./js/login/login-ani.js" ></script>
+    <script src="js/products/product.js"></script>
+</body>
+</html>
